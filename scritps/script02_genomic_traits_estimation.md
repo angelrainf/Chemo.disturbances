@@ -17,7 +17,7 @@ data.range<-function(n)
 }
 
 gtraits <- tibble(read.table("TableS1.tsv", header = T, sep = "\t", fill = T)) %>%
-  select(PICRUSt.ID,Genome.size,X.TF, Generation.time..gRodon.) %>% gtraits
+  select(PICRUSt.ID,Genome.size,X.TF, Generation.time..gRodon.)
 
 ptraits <- data.frame(assembly=gtraits$PICRUSt.ID,
                       genome.size=data.range(gtraits$Genome.size),
